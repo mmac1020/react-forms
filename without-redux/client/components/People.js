@@ -8,7 +8,7 @@ const People = (props) => {
           <div className='person' key={person.id}>
             <div> Hi {person.name}! </div>
             <div> Your job is: {person.job} </div>
-            <div> Your favorite food is: {person.name} </div>
+            <div> Your favorite food is: {person.favoriteFood} </div>
           </div>
         );
       })}
