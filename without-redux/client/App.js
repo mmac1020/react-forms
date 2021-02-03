@@ -2,13 +2,13 @@ import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './components/Form';
-import People from './components/People';
+import User from './components/User';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      people: [],
+      users: [],
     };
   }
 
@@ -16,7 +16,7 @@ class App extends React.Component {
     try {
       const { data } = await axios.get('/api/users');
       this.setState({
-        people: data,
+        users: data,
       });
     } catch (err) {
       console.log(err);
@@ -28,7 +28,7 @@ class App extends React.Component {
       <div>
         <h1>React Forms!!!</h1>
         <Form />
-        <People people={this.state.people} />
+        <User users={this.state.users} />
       </div>
     );
   }
