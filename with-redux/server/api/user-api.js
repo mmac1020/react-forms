@@ -11,7 +11,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.put('/', async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   try {
     const createdUser = await User.create(req.body);
     res.json(createdUser);
