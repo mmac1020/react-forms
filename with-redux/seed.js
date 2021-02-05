@@ -1,4 +1,4 @@
-const people = [
+const users = [
   {
     name: 'Mac',
     job: 'Instructor',
@@ -16,8 +16,8 @@ const seed = async () => {
   await db.sync({ force: true });
 
   await Promise.all(
-    people.map(async (person) => {
-      await User.create(person);
+    users.map(async (user) => {
+      await User.create(user);
     })
   );
   db.close();
