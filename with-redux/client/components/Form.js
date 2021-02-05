@@ -47,7 +47,7 @@ class Form extends React.Component {
             <input
               type='text'
               name='name'
-              value={this.state.username}
+              value={this.state.name}
               onChange={this.handleChange}
             />
           </div>
