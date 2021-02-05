@@ -28,8 +28,8 @@ class Form extends React.Component {
   async handleSubmit(event) {
     event.preventDefault();
     try {
-      // Creating a resource we usually do with PUT
-      const { data } = await axios.put('/api/users', this.state);
+      // Creating a resource we usually do with POST
+      const { data } = await axios.post('/api/users', this.state);
       this.props.addUser(data);
       this.setState(initState);
     } catch (err) {
@@ -47,7 +47,7 @@ class Form extends React.Component {
             <input
               type='text'
               name='name'
-              value={this.state.username}
+              value={this.state.name}
               onChange={this.handleChange}
             />
           </div>
