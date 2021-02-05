@@ -10,6 +10,7 @@ class App extends React.Component {
     this.state = {
       users: [],
     };
+    this.addAUser = this.addAUser.bind(this);
   }
 
   async componentDidMount() {
@@ -23,11 +24,19 @@ class App extends React.Component {
     }
   }
 
+  addAUser(user) {
+    const currentUsers = [...this.state.users];
+    currentUsers.push(user);
+    this.setState({
+      users: currentUsers,
+    });
+  }
+
   render() {
     return (
       <div>
         <h1>React Forms!!!</h1>
-        <Form />
+        <Form addAUser={this.addAUser} />
         <User users={this.state.users} />
       </div>
     );
