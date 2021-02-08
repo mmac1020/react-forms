@@ -21,7 +21,7 @@ const mapStateToProps = (state) => {
   // state: [...Users]
   // state: [...Users +++++ action.user]
   return {
-    users: state,
+    users: state.users,
   };
   // props: {users: [...Users]}
   // props: {users: [...Users ++++++ action.user]}
