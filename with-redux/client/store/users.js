@@ -45,8 +45,10 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case GOT_USERS:
       return action.users;
+    // state: [...Users]
     case ADD_USER:
       return [...state, action.user];
+    // state: [...Users +++++ action.user]
     default:
       return state;
   }
