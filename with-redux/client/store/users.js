@@ -31,7 +31,7 @@ export const fetchUsers = () => {
 export const addNewUser = (user) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.put('/api/users', user);
+      const { data } = await axios.post('/api/users', user);
       dispatch(addUser(data));
     } catch (err) {
       console.log(err);
