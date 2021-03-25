@@ -5,7 +5,7 @@ const users = [
     favoriteFood: 'Drunken Noodle',
   },
   {
-    name: 'Ben',
+    name: 'Sarah',
     job: 'Instructor',
     favoriteFood: 'Burgers',
   },
