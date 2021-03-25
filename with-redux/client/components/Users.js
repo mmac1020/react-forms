@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Users = (props) => {
   return (
-    <div>
+    <div className='container-users'>
       {props.users.map((user) => {
         return (
           <div className='user' key={user.id}>

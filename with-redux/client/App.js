@@ -18,7 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='container'>
         <h1>React Forms!!!</h1>
         <Form />
         <Users />

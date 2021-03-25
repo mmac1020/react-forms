@@ -1,3 +1,31 @@
-.person {
-  border-top: 1px solid black;
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-users {
+  margin-top: 1em;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.container-form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
 }

@@ -42,7 +42,7 @@ class Form extends React.Component {
       <div>
         <span>Fill out form to add a user</span>
         <form onSubmit={this.handleSubmit}>
-          <div>
+          <div className='container-form-field'>
             <label htmlFor='name'>Name</label>
             <input
               type='text'
@@ -51,7 +51,7 @@ class Form extends React.Component {
               onChange={this.handleChange}
             />
           </div>
-          <div>
+          <div className='container-form-field'>
             <label htmlFor='job'>Job</label>
             <input
               type='text'
@@ -60,7 +60,7 @@ class Form extends React.Component {
               onChange={this.handleChange}
             />
           </div>
-          <div>
+          <div className='container-form-field'>
             <label htmlFor='favorteFood'>Favorite Food</label>
             <input
               type='text'
