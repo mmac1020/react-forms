@@ -18,6 +18,7 @@ const Users = (props) => {
 };
 
 const mapStateToProps = (state) => {
+  // put part of redux state onto component properties "props"
   return {
     users: state.users,
   };
